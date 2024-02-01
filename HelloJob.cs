@@ -74,7 +74,7 @@ public class HelloJob : IJob
 
 
         }
-
+Console.WriteLine("현재 날짜 : {0}", DateTime.Now);
         // id = Convert.ToInt32(reader["id"]),
         //                     name = reader["name"].ToString(),
         //                     crew = reader["crew"].ToString(),

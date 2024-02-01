@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jang-wonbin/Desktop/React/Scheduler/Scheduler/Scheduler.csproj": {}
+    "c:\\Users\\hun11\\Scheduler\\Scheduler.csproj": {}
   },
   "projects": {
-    "/Users/jang-wonbin/Desktop/React/Scheduler/Scheduler/Scheduler.csproj": {
+    "c:\\Users\\hun11\\Scheduler\\Scheduler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jang-wonbin/Desktop/React/Scheduler/Scheduler/Scheduler.csproj",
+        "projectUniqueName": "c:\\Users\\hun11\\Scheduler\\Scheduler.csproj",
         "projectName": "Scheduler",
-        "projectPath": "/Users/jang-wonbin/Desktop/React/Scheduler/Scheduler/Scheduler.csproj",
-        "packagesPath": "/Users/jang-wonbin/.nuget/packages/",
-        "outputPath": "/Users/jang-wonbin/Desktop/React/Scheduler/Scheduler/obj/",
+        "projectPath": "c:\\Users\\hun11\\Scheduler\\Scheduler.csproj",
+        "packagesPath": "C:\\Users\\hun11\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\hun11\\Scheduler\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/jang-wonbin/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\hun11\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -98,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
