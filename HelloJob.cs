@@ -54,37 +54,23 @@ DateTime dateTime = new DateTime();
                 {
                     dateTime = Convert.ToDateTime(reader["savedtime"]);
                     time1 = dateTime - now;
-                    // Console.WriteLine("DB에서 받아온 날짜 : {0}", dateTime);
-                    // Console.WriteLine("현재 날짜 : {0}", now);
-                    // Console.WriteLine("현재 날짜ShortDateString: {0}", now.ToShortDateString());
-                    // Console.WriteLine("현재 시간: {0}", now.ToShortTimeString());
-                    // Console.WriteLine("DB 날짜 - 지금 날짜 : {0}", dateTime - now);
+                 
                 }
 
             }
             Console.WriteLine(dateTime);
             if (dateTime.Minute == DateTime.Now.Minute+1)
             {
-            //     MySqlCommand updatecmd = new(@"
-            //     CALL UpdateCoinPrices();
-            //     CALL UpdateTotal();
-            // ", connection);
-            //     updatecmd.ExecuteNonQuery();
-            Console.WriteLine("DB 날짜 - 지금 날짜 : {0}", time1);
-             Console.WriteLine("time1.Minutes : {0}", time1.Minutes);
+                MySqlCommand updatecmd = new(@"
+                CALL UpdateCoinPrices();
+                CALL UpdateTotal();
+            ", connection);
+                updatecmd.ExecuteNonQuery();
+
             }
 
 
         }
-
-        // id = Convert.ToInt32(reader["id"]),
-        //                     name = reader["name"].ToString(),
-        //                     crew = reader["crew"].ToString(),
-        //                     type = reader["type"].ToString(),
-        //                     balance = Convert.ToInt32(reader["balance"]),
-        //                     phonenum = reader["phonenum"].ToString(),
-        //                     admin = Convert.ToBoolean(reader["admin"])
-
         return Task.CompletedTask;
     }
 }
