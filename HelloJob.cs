@@ -38,10 +38,10 @@ DateTime dateTime = new DateTime();
                 FROM 
                     `Time` t
                 WHERE 
-                TIME(CONVERT_TZ(NOW(), 'UTC', 'Asia/Seoul')) < savedtime 
+                NOW() < savedtime 
                 ORDER BY 
                     savedtime 
-                ASC
+                DESC
                 LIMIT 1;
 
             ", connection);
@@ -58,7 +58,9 @@ DateTime dateTime = new DateTime();
                 }
 
             }
+            Console.WriteLine(time1);
             Console.WriteLine(dateTime);
+            Console.WriteLine(now);
             if (dateTime.Minute == DateTime.Now.Minute+1)
             {
                 MySqlCommand updatecmd = new(@"
@@ -66,6 +68,8 @@ DateTime dateTime = new DateTime();
                 CALL UpdateTotal();
             ", connection);
                 updatecmd.ExecuteNonQuery();
+                Console.WriteLine(dateTime);
+                
 
             }
 
