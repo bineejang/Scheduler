@@ -41,7 +41,7 @@ DateTime dateTime = new DateTime();
                 NOW() < savedtime 
                 ORDER BY 
                     savedtime 
-                DESC
+                ASC
                 LIMIT 1;
 
             ", connection);
