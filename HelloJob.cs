@@ -67,6 +67,7 @@ public class HelloJob : IJob
             {
                 MySqlCommand updatecmd = new(@"
                 CALL UpdateCoinPrices();
+                CALL UpdateTotal();
             ", connection);
                 updatecmd.ExecuteNonQuery();
 
