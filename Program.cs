@@ -25,7 +25,7 @@ var job = JobBuilder.Create<HelloJob>()
 // Trigger the job to run now, and then every 40 seconds
 var trigger = TriggerBuilder.Create()
     .WithIdentity("myTrigger", "group1")
-    .WithCronSchedule("00 0/1 * * * ?")
+    .WithCronSchedule("59 0/1 * * * ?")
     .Build();
 
 await scheduler.ScheduleJob(job, trigger);
